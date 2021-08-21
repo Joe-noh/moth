@@ -21,8 +21,8 @@ function QueryForm(props: Props) {
 
   return (
     <form onSubmit={onSubmit}>
-      <textarea onChange={onChange} value={query}></textarea>
-      <input type="submit" />
+      <textarea onChange={onChange} value={query} data-testid="query-textarea"></textarea>
+      <input type="submit" data-testid="submit-button" />
     </form>
   )
 }
