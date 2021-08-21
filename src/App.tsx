@@ -29,8 +29,12 @@ function App() {
       Tauri
       <button onClick={select}>{query}</button>
       <table width="100%">
-        <tr>{headers}</tr>
-        {body}
+        <thead>
+          <tr>{headers}</tr>
+        </thead>
+        <tbody>
+          {body}
+        </tbody>
       </table>
     </div>
   )
